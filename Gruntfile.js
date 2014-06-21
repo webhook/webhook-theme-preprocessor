@@ -64,9 +64,17 @@ module.exports = function(grunt) {
       },
     },
     watch: {
-      options : {
-        files: ['sass/**/*.sass', 'less/**/*.less','bower_components/wyrm/sass/**/*.sass'],
-        tasks: ['sass', 'less', 'coffee', 'build']
+      sass : {
+        files: ['sass/**/*.sass'],
+        tasks: ['sass', 'build']
+      },
+      less : {
+        files: ['less/**/*.less'],
+        tasks: ['less', 'build']
+      },
+      coffee : {
+        files: ['coffee/**/*.coffee'],
+        tasks: ['coffee', 'build']
       },
     }
   });
