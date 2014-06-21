@@ -63,6 +63,8 @@ module.exports = function(grunt) {
         }
       },
     },
+
+    // WHEN FILES CHANGE, RUN THE ABOVE TASKS ALONG WITH BUILD
     watch: {
       sass : {
         files: ['sass/**/*.sass'],
